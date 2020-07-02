@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+:root{
+  font-size: calc(1rem + 0.4vmax);
+}
+
+@media (max-width: 600px){
+  header nav, nav div, header{
+    flex-flow: column;
+  }
+}
+@media (max-width:800px){
+  .grilla.audiovisual{
+    display: flex;
+    flex-flow: column;
+  }
+  h1{
+    letter-spacing: 0.2em;
+  }
+}
+@media (min-width: 800px){
+  .grilla.audiovisual{
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 3em;
+  }
+  .portfolio{
+    max-width: 70%;
+  }
+  h1{
+    letter-spacing: 0.5em;
+  }
+}
+@media (min-width: 600px){
+  header nav, nav div{
+    flex-flow: row nowrap;
+  }
+  header nav{
+    flex-grow: 1;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  header{
+    flex-flow: row;
+  }
+}
+
+:root{
+  scroll-behavior: smooth;
+}
+.logo, .portfolio img{
+  flex-grow: 1;
+}
+.logo{
+  font-size: 3em;
+}
+.logo a{
+  padding:0.5em;
+}
+body{
+  --color-normal: rgb(0, 0, 0);
+  --color-contraste: rgb(255, 255, 255);
+  font-family: "Inconsolata";
+  background-color: var(--color-normal);
+  background-image: url("res/img/dibujos/4.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body, a, h1{
+  color: var(--color-contraste);
+}
+body > *{
+  background-color:rgba(0, 0, 0, 0.8);
+}
+main{
+  padding: 0 2em;
+}
+section{
+  width: 80%;
+  margin:auto;
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover{
+  text-decoration: underline;
+}
+h1{
+  text-align: center;
+  padding: 2em 0 1em;
+  text-transform: uppercase;
+  color: rgb(180, 180, 180);
+  font-size: 2em;
+}
+header{
+  justify-content: center;
+}
+header, header nav, nav div, .portafolio > div, .video, .redes, div.red{
+  display: flex;
+}
+header nav a{
+  padding: 0.75em 1.25em;
+  padding: 1em 1.5em;
+}
+footer{
+  color:rgb(180, 180, 180);
+  text-align: center;
+  padding: 2em 0;
+}
+
+#volver-arriba{
+  background-color: var(--color-contraste);
+  color: var(--color-normal);
+  font-size: 1.5em;
+  padding: 0.22em 0.32em;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 1em;
+  font-weight: 900;
+  z-index: 2;
+}
+#volver-arriba i{
+  color: inherit;
+}
+
+.grilla{
+  display: grid;
+  grid-gap: 0.3em;
+  margin: auto;
+}
+.grilla.portafolio::-webkit-scrollbar {
+  width: 12px;
+}
+.grilla.portafolio::-webkit-scrollbar-track {
+  background: rgb(99, 99, 99);
+}
+.grilla.portafolio::-webkit-scrollbar-thumb {
+  background: rgb(255, 255, 255);
+
+}
+.grilla.portafolio{
+  overflow-x: auto;
+  overflow-y: hidden;
+  grid-auto-columns: 300px;
+  grid-template-rows: 600px;
+  grid-auto-flow: column;
+  padding: 1em 0;
+  scrollbar-color: rgb(255, 255, 255) rgb(99, 99, 99);
+  margin-bottom: 3em;
+}
+.portafolio > div, .video{
+  flex-flow: column;
+}
+.portafolio img{
+  width: 100%;
+  height: 100%;
+  object-fit:cover ;
+  transition-property: transform, box-shadow;
+  transition-duration: 0.4s;
+}
+.portafolio .destacado{
+  grid-row: span 2;
+  grid-column: span 2;
+}
+.portafolio img:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+iframe{
+  max-width: 600px;
+  height: 350px;
+  width: 100%;
+}
+
+.redes{
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.redes h1{
+  flex-basis: 100%;
+}
+.red{
+  font-size: 2em;
+  margin: 0.5em 1em;
+}
+.red:hover{
+  text-decoration: none;
+}
+.red:hover p{
+  text-decoration: underline;
+}
+.red div{
+  display: flex;
+  flex-flow: row;
+}
+.red div > *{
+  padding: 0 0.2em;
+}
+.red p, h1, body, .portafolio > div{
+  margin: 0;
+}
+#fiverr{
+  width: 1em;
+}
