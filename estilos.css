@@ -140,17 +140,17 @@ footer i{
   background: rgb(100, 100, 100);
 }
 .grilla.portafolio::-webkit-scrollbar-thumb {
-  background: var(--color-normal);
+  background: var(--color-contraste);
 
 }
 .grilla.portafolio{
   overflow-x: auto;
   overflow-y: hidden;
-  grid-auto-columns: 300px;
-  grid-template-rows: 600px;
+  grid-auto-columns: 48vh;
+  grid-template-rows: 97vh;
   grid-auto-flow: column;
   padding: 1em 0;
-  scrollbar-color: var(--color-normal) rgb(100, 100, 100);
+  scrollbar-color: var(--color-contraste) rgb(100, 100, 100);
 }
 .portafolio > div, .video{
   flex-flow: column;
@@ -175,8 +175,8 @@ footer i{
   display: block;
   margin: 2em auto 1em;
   padding: 1em 4em;
-  border-top: 2px solid var(--color-normal);
-  border-bottom: 2px solid var(--color-normal);
+  border-top: 2px solid var(--color-contraste);
+  border-bottom: 2px solid var(--color-contraste);
 }
 iframe{
   max-width: 600px;
