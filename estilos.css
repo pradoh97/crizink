@@ -22,6 +22,10 @@
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 3em;
   }
+  section{
+    width: 80%;
+    margin: 0 auto 3em;
+  }
   .portfolio{
     max-width: 70%;
   }
@@ -74,10 +78,6 @@ body > *{
 main{
   padding: 0 2em;
 }
-section{
-  width: 80%;
-  margin: 0 auto 3em;
-}
 a{
   text-decoration: none;
   display: inline-block;
@@ -94,6 +94,7 @@ h1{
 }
 header{
   justify-content: center;
+  margin-bottom: 1em;
 }
 header, header nav, nav div, .portafolio > div, .video, .redes, div.red{
   display: flex;
@@ -172,6 +173,8 @@ footer i{
   z-index: 1;
 }
 .separador{
+  width:100%;
+  max-width: 120px;
   display: block;
   margin: 2em auto 1em;
   padding: 1em 4em;
@@ -187,6 +190,7 @@ iframe{
 .redes{
   flex-flow: row wrap;
   justify-content: center;
+  margin-bottom: 0;
 }
 .redes h1{
   flex-basis: 100%;
