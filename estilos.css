@@ -7,6 +7,9 @@
   header nav, nav div, header{
     flex-flow: column;
   }
+  main{
+    padding: 0 2em;
+  }
 }
 @media (max-width:800px){
   .grilla.audiovisual{
@@ -45,6 +48,9 @@
   header{
     flex-flow: row;
   }
+  main{
+    padding: 0 2em;
+  }
 }
 
 :root{
@@ -74,9 +80,6 @@ body, a, h1{
 }
 body > *{
   background-color:rgba(0, 0, 0, 0.8);
-}
-main{
-  padding: 0 2em;
 }
 a{
   text-decoration: none;
