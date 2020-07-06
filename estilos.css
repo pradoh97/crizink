@@ -97,7 +97,7 @@ h1{
 }
 header{
   justify-content: center;
-  margin-bottom: 1em;
+  padding-bottom: 1em;
 }
 header, header nav, nav div, .portafolio > div, .video, .redes, div.red{
   display: flex;
