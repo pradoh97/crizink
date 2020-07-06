@@ -107,6 +107,9 @@ footer{
   text-align: center;
   padding: 2em 0;
 }
+footer i{
+  color: rgba(255, 0, 0, 1);
+}
 
 #volver-arriba{
   background-color: var(--color-contraste);
