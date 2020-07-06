@@ -73,7 +73,7 @@ body{
   background-image: url("res/img/dibujos/4.jpg");
   background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 body, a, h1{
   color: var(--color-contraste);
