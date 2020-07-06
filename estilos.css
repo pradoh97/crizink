@@ -76,7 +76,7 @@ main{
 }
 section{
   width: 80%;
-  margin:auto;
+  margin: 0 auto 3em;
 }
 a{
   text-decoration: none;
@@ -134,10 +134,10 @@ footer{
   width: 12px;
 }
 .grilla.portafolio::-webkit-scrollbar-track {
-  background: rgb(99, 99, 99);
+  background: rgb(100, 100, 100);
 }
 .grilla.portafolio::-webkit-scrollbar-thumb {
-  background: rgb(255, 255, 255);
+  background: var(--color-normal);
 
 }
 .grilla.portafolio{
@@ -147,8 +147,7 @@ footer{
   grid-template-rows: 600px;
   grid-auto-flow: column;
   padding: 1em 0;
-  scrollbar-color: rgb(255, 255, 255) rgb(99, 99, 99);
-  margin-bottom: 3em;
+  scrollbar-color: var(--color-normal) rgb(100, 100, 100);
 }
 .portafolio > div, .video{
   flex-flow: column;
@@ -169,7 +168,13 @@ footer{
   box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
-
+.separador{
+  display: block;
+  margin: 2em auto 1em;
+  padding: 1em 4em;
+  border-top: 2px solid var(--color-normal);
+  border-bottom: 2px solid var(--color-normal);
+}
 iframe{
   max-width: 600px;
   height: 350px;
@@ -205,4 +210,62 @@ iframe{
 }
 #fiverr{
   width: 1em;
+}
+.revisiones{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.revisiones ul{
+  list-style: none;
+  padding: 0;
+  margin:2em 0 1em;
+}
+.revisiones li{
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 1em 0.5em;
+  color: var(--color-normal);
+  background-color: var(--color-contraste);
+  border-radius: 5px;
+  max-width: 600px;
+  box-shadow: 0 0 3em rgba(255, 255, 255, 0.3);
+}
+.revisiones li + li{
+  margin-top: 1em;
+}
+.revisiones .informacion{
+  display: flex;
+  flex-flow: row wrap;
+  padding-left: 0.5em;
+}
+.revisiones img, .revisiones .imagen-perfil{
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+.revisiones .imagen-perfil{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(170, 170, 170, 1);
+  color: var(--color-contraste);
+  text-transform: uppercase;
+}
+.revisiones p.valoracion{
+  color: rgba(249, 209, 0, 1);
+  margin-top: 0;
+}
+.revisiones .comentario, .revisiones .valoracion{
+  flex-basis: 100%;
+}
+.revisiones p{
+  margin:0;
+}
+.revisiones .informacion > * + * {
+  margin-top: 0.5em;
+}
+.revisiones .usuario{
+  font-weight: bold;
 }
